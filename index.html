@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,11 +7,30 @@
 	<title>Spoons</title>
 </head>
 <body>
-	<<div>
-		HUy
-	</div>
-	<div>
-		Stay
+	<div class="mainForm">
+		<form>
+			<select>
+				<optgroup label="Сыпучие">
+					<option value="1">Мука</option>
+					<option value="2">Сахар</option>
+				</optgroup>
+				<optgroup label="Жидкие">
+					<option value="3">Вода</option>
+				</optgroup>
+				<optgroup label="Штучные">
+					<option value="4">Яйца</option>
+				</optgroup>
+			</select>
+
+			<input type="text" autofocus onkeyup="calcProd(this.innerHTML)">
+
+			<select>
+				<option>г</option>
+				<option>кг</option>
+				<option>ч л</option>
+				<option>ст л</option>
+			</select>
+		</form>
 	</div>
 
 	<script src="assets/app.js"></script>
