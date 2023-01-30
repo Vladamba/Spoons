@@ -7,42 +7,38 @@
 	<title>Spoons</title>
 </head>
 <body>
-	<div class="formDiv">
-		<form>
-			<select id="productSelect">
-				<!--<optgroup label="Сыпучие">    				 сып 5.   жид 5.   шт 3.
-					<option>Мука</option>
-					<option>Сахар</option>
-				</optgroup>
-				<optgroup label="Жидкие">     
-					<option>Вода</option>
-				</optgroup>
-				<optgroup label="Штучные">    
-					<option>Яйца</option>
-				</optgroup> -->
-			</select>
+	<div id="formDiv">
+		<select id="productSelect" onchange="changeProd()">
+			<!--<optgroup label="Сыпучие">    				 
+				<option>Мука</option>
+				<option>Сахар</option>
+			</optgroup>
+			<optgroup label="Жидкие">     
+				<option>Вода</option>
+			</optgroup>
+			<optgroup label="Штучные">    
+				<option>Яйца</option>
+			</optgroup> -->
+		</select>
 
-			<input id="amountInput" type="text" autofocus oninput="calcProd()">
+		<input id="amountInput" type="text" autofocus oninput="calcProd()">
 
-			<select id="unitSelect">
-				<option>г</option>
-				<option>кг</option>
-				<option>мл</option>
-				<option>л</option>
-				<option>ч л</option>
-				<option>ст л</option>
-				<option>ст</option>
-				<option>шт</option>
-			</select>
-		</form>
+		<select id="unitSelect" onchange="calcProd()">
+			<!--<option>г</option>
+			<option>кг</option>
+			<option>мл</option>
+			<option>л</option>
+			<option>ч л</option>
+			<option>ст л</option>
+			<option>ст</option>
+			<option>шт</option>-->
+		</select>
 	</div>
 
-	<div class="resultsDiv">
+	<div id="resultsDiv">
 		<div class="resultText">В других единицах</div>
-		<div class="calcResults">0 кг</div>
-		<div class="calcResults">0 ч л</div>
-		<div class="calcResults">0 ст л</div>
-		<div class="calcResults">0 ст</div>
+		<div class="calcResults"></div>
+		<div class="calcResults"></div>
 	</div>
 
 	<script src="assets/app.js"></script>

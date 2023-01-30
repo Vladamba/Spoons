@@ -3,12 +3,12 @@ body {
 	padding: 0px;
 }
 
-.formDiv {
+#formDiv {
 	margin-top: 50px;
 	text-align: center;
 }
 
-.resultsDiv {
+#resultsDiv {
 	width: 80%;
 	text-align: center;
 	border: 2px solid red;
@@ -24,6 +24,7 @@ body {
 }
 
 .calcResults {
+	text-align: right;
 	display: inline-block;
 	font-size: 20px;
 	border: 1px solid blue;
